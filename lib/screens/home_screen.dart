@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         color: Colors.black54,
                         size: 18,
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Row(
                         children: const [
                           Icon(
