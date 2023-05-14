@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/constants/app_colors.dart';
 import 'package:food_app/constants/image_path.dart';
+import 'package:food_app/screens/item_screen.dart';
 import 'package:food_app/widgets/app_text.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -246,7 +247,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemCount: food2.length,
                 itemBuilder: (context, index) {
                   return InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return const ItemScreen();
+                      }));
+                    },
                     child: Container(
                       width: MediaQuery.of(context).size.width / 1.4,
                       margin: const EdgeInsets.only(
