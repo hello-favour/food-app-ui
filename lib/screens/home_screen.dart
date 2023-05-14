@@ -17,9 +17,17 @@ class _HomeScreenState extends State<HomeScreen> {
     ImagePath.pizza,
     ImagePath.snacks,
     ImagePath.water,
+    ImagePath.burger,
+    ImagePath.pizza,
+    ImagePath.snacks,
+    ImagePath.water,
   ];
 
   List foodNames = [
+    "burger",
+    "pizza",
+    "snacks",
+    "water",
     "burger",
     "pizza",
     "snacks",
@@ -32,6 +40,10 @@ class _HomeScreenState extends State<HomeScreen> {
   ];
 
   List<Color> bgColors = const [
+    Color(0xFFFBDCDA),
+    Color(0xFFD4EEF3),
+    Color(0xFFFAE6D5),
+    Color(0xFFEFCFE7),
     Color(0xFFFBDCDA),
     Color(0xFFD4EEF3),
     Color(0xFFFAE6D5),
@@ -181,6 +193,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+            const SizedBox(height: 8),
             SizedBox(
               height: 120,
               child: ListView.builder(
@@ -216,6 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
               ),
             ),
+            const SizedBox(height: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
               child: Row(
@@ -223,7 +237,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   const AppText(
                     text: "Popular",
-                    color: Colors.black54,
+                    color: Colors.black,
                     size: 22,
                     fontWeight: FontWeight.w500,
                   ),
@@ -239,6 +253,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+            const SizedBox(height: 8),
             SizedBox(
               height: 220,
               child: ListView.builder(
